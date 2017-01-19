@@ -126,13 +126,74 @@ a:active
     -webkit-appearance:none;
     cursor:default;
 }
-.baidu_text_3
+.source_text
 {
     font-size:14px;
 }
-.homepage_bottom
+.source_bottom
 {
-    font-size:14px;color:gray;
+    font-size:14px;
+    color:gray;
+}
+.baidu_com_table
+{
+    border-collapse:collapse;
+    margin-left:auto;
+    margin-right:auto;
+    border:5px solid black;
+}
+.baidu_com_td
+{
+    border:5px solid black;
+}
+.baidu_com_td_1
+{
+    border:5px solid black;
+    background-color:white;
+}
+.so_com_table
+{
+    border-collapse:collapse;
+    margin-left:auto;
+    margin-right:auto;
+    border:5px solid black;
+    width:95%;
+}
+.so_com_td
+{
+    border:5px solid black;
+}
+.so_com_td_1
+{
+    border:5px solid black;
+    background-color:white;
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+}
+.so_com_iframe
+{
+    width:95%;
+    height:2350px;
+}
+.notice_1
+{
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    display:inline-block;
+    border-width:1px;
+    border-color:gray;
+    border-style:dashed;
+}
+.notice_2
+{
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    display:inline-block;
+    border-width:1px;
+    border-color:gray;
+    border-style:dashed;
 }
 </style>
 <script>
@@ -276,22 +337,42 @@ function body_onfocus()
     <br>
     <input type="text" id="input_text" onfocus="input_text_onfocus()" onkeypress="input_text_onkeypress(event)" class="input_text" value="盗墓笔记"><input readonly type="text" id="search_button" class="search_button" onclick="search_onclick()" value="搜索"><br>
     <br>
-    <div class="baidu_text_3"><a href="http://top.baidu.com/buzz?b=26&c=1&fr=topcategory_c1" target="_blank">百度搜索风云榜</a> / <a href="http://top.baidu.com/add?fr=topbuzz_b26_c1" target="_blank">电影列表</a></div>
-    <iframe vspace="0" hspace="0" scrolling="no" frameborder="0" id="clip" name="clip" width="180" height="645" src="http://top.baidu.com/clip?b=26&hd_h_info=1&p_name=%E4%BB%8A%E6%97%A5%E7%94%B5%E5%BD%B1%E6%8E%92%E8%A1%8C%E6%A6%9C&hd_trend=0&hd_searches=1&line=20&width=180" ></iframe>
-    <div class="homepage_bottom">
-        向上的箭头表示“热度上升”，可以重点关注。<br>数据由百度官方提供，点击后打开百度页面。<br>
+    <table class="baidu_com_table">
+        <tr><td class="baidu_com_td">
+            <div class="source_text"><a href="http://top.baidu.com/buzz?b=26&c=1&fr=topcategory_c1" target="_blank">百度搜索风云榜</a> / <a href="http://top.baidu.com/add?fr=topbuzz_b26_c1" target="_blank">列表</a></div>
+        </td></tr>
+        <tr><td class="baidu_com_td_1">
+            <iframe vspace="0" hspace="0" scrolling="no" frameborder="0" id="clip" name="clip" width="180" height="645" src="http://top.baidu.com/clip?b=26&hd_h_info=1&p_name=%E4%BB%8A%E6%97%A5%E7%94%B5%E5%BD%B1%E6%8E%92%E8%A1%8C%E6%A6%9C&hd_trend=0&hd_searches=1&line=20&width=180" ></iframe>
+        </td></tr>
+    </table>
+    <div class="source_bottom">
+        向上的箭头表示“热度上升”，可以重点关注。<br>页面由百度官方提供，点击后打开百度页面。<br>
+        <div class="notice_1">
+            * 页面采用“IFRAME”加载，是一种<a href="https://www.baidu.com/s?&wd=iframe" target="_blank">常见技术</a>，并写明来源。<br>* 页面加载的“IFRAME”代码由<a href="http://top.baidu.com/add?fr=topbuzz_b26_c1" target="_blank">百度官方工具</a>生成。<br>* 所以认为这样“遵守道德/遵守行业惯例/遵守版权”。<br># 有异议可以在这个开源项目的GitHub提意见。<br>
+        </div>
+        <br>
+        <br>
+    </div>
+    <table class="so_com_table">
+        <tr><td class="so_com_td">
+            <div class="source_text"><a href="http://top.so.com/" target="_blank">360热榜</a> / <a href="http://top.so.com/index?c=%E7%94%B5%E5%BD%B1" target="_blank">电影</a></div>
+        </td></tr>
+        <tr><td>
+            <div class="source_text"><a href="http://top.so.com/index?c=电影" target="_blank">http://top.so.com/index?c=电影</a></div>
+        </td></tr>
+        <tr><td class="so_com_td_1">
+            <iframe scrolling="yes" frameborder="0" src="http://top.so.com/index?c=%E7%94%B5%E5%BD%B1" class="so_com_iframe"></iframe>
+        </td></tr>
+    </table>
+    <div class="source_bottom">
+        向上的箭头表示“热度上升”，可以重点关注。<br>页面由360官方提供，点击后打开360页面。<br>
+        <div class="notice_2">
+            * 页面采用“IFRAME”加载，是一种<a href="https://www.baidu.com/s?&wd=iframe" target="_blank">常见技术</a>，并写明来源。<br>* 页面没有<a href="http://www.jb51.net/article/68896.htm" target="_blank">JavaScript</a>/<a href="http://caibaojian.com/x-frame-options.html" target="_blank">X-Frame-Options</a>阻止“IFRAME”加载。<br>* 页面没有“robots.txt”阻止收录，且被百度<a href="https://www.baidu.com/s?&wd=360热门电影排行榜" target="_blank">收录保存</a>。<br>* 所以认为这样“遵守道德/遵守行业惯例/遵守版权”。<br># 有异议可以在这个开源项目的GitHub提意见。<br>
+        </div>
+        <br>
         <br>
         <a href="http://liuzhiyong.me/#dianyingxiacom">About</a> <a href="https://github.com/httpliuzhiyongme/dianyingxia">GitHub</a>
     </div>
 </div>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?9cff961fced4f9ee117ba229458b83ab";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 </body>
 </html>
